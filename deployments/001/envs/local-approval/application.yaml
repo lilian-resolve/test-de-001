@@ -1,0 +1,42 @@
+apiVersion: core.oam.dev/v1beta1
+kind: Application
+metadata:
+  annotations:
+    application.deploy.reform/cluster: local
+    application.deploy.reform/commitHash: 04d4cd2bf6818d8a0a0e5016be29a50fb6f6dd6f
+    application.deploy.reform/deploymentNo: test-ops-111-local-approval_DP1
+    application.deploy.reform/environment: local-approval
+    application.deploy.reform/name: test-ops-111
+    application.deploy.reform/repository: https://github.com/lilian-resolve/test-de-001.git
+    application.deploy.reform/repositoryPath: "001"
+    application.deploy.reform/revision: 2023.04.1
+    application.deploy.reform/tags: ""
+    deploy.reform/domain: ""
+    deploy.reform/version: dev
+  creationTimestamp: null
+  name: test-ops-111
+  namespace: vela-app
+spec:
+  components:
+  - name: test-ops-111-web-wizard-web-web
+    properties:
+      domain: https://github.com/lilian-resolve/test-de-001.git
+      path: "001"
+      resource: Low
+      secure: true
+    type: web-wizard-web
+  policies:
+  - name: topology-clusters
+    properties:
+      clusters:
+      - local
+    type: topology
+  workflow:
+    steps:
+    - name: deploy
+      properties:
+        ignoreTerraformComponent: false
+        policies:
+        - topology-clusters
+      type: deploy
+status: {}
