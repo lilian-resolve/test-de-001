@@ -15,4 +15,12 @@ spec:
       resource: Low
       secure: true
     type: web-wizard-web
+  - name: test-ops-222-newhelm-api
+    properties:
+      domain: https://github.com/lilian-resolve/test-de-001
+      expose: true
+      path: "005"
+      resource: Low
+      secure: true
+    type: web-wizard-api
 status: {}
