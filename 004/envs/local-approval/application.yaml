@@ -15,6 +15,14 @@ spec:
       resource: Low
       secure: true
     type: web-wizard-web
+  - name: test-ops-001-newweb-api
+    properties:
+      domain: https://github.com/lilian-resolve/test-de-001
+      expose: false
+      path: "004"
+      resource: Low
+      secure: false
+    type: web-wizard-api
   policies:
   - name: topology-clusters
     properties:
