@@ -27,7 +27,7 @@ spec:
       imagePullPolicy: IfNotPresent
       memory: 100Mi
       ports:
-      - expose: true
+      - expose: false
         port: 80
         protocol: TCP
     type: webservice
