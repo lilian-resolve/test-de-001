@@ -3,13 +3,13 @@ kind: Application
 metadata:
   annotations:
     application.deploy.reform/cluster: local
-    application.deploy.reform/commitHash: 2dfefb1451c7035c7c4ea33d22f36146592b51ad
-    application.deploy.reform/deploymentNo: test-ops-222-local-approval_DP2
+    application.deploy.reform/commitHash: fd11a1310b520acc20ecafa27cd7511febf92fb9
+    application.deploy.reform/deploymentNo: test-ops-222-local-approval_DP4
     application.deploy.reform/environment: local-approval
     application.deploy.reform/name: test-ops-222
     application.deploy.reform/repository: https://github.com/lilian-resolve/test-de-001.git
     application.deploy.reform/repositoryPath: "006"
-    application.deploy.reform/revision: 2023.04.2
+    application.deploy.reform/revision: 2023.04.4
     application.deploy.reform/tags: ""
     deploy.reform/domain: ""
     deploy.reform/version: 6b5c82cf8fbd6720e41370072c0193f4158e3f6c
@@ -18,13 +18,14 @@ metadata:
   namespace: vela-app
 spec:
   components:
-  - name: test-ops-222-web-wizard-web-web
+  - name: test-ops-222-newhelm-api
     properties:
       domain: https://github.com/lilian-resolve/test-de-001
+      expose: true
       path: "005"
       resource: Low
       secure: true
-    type: web-wizard-web
+    type: web-wizard-api
   policies:
   - name: topology-clusters
     properties:
