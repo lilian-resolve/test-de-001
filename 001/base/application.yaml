@@ -10,8 +10,8 @@ spec:
   components:
   - name: test-ops-111-web-wizard-web-web
     properties:
-      domain: https://github.com/lilian-resolve/test-de-001.git
-      path: "001"
+      domain: https://git.reslv.io/infinity-apps/app-test-1
+      path: /app-test-1001
       resource: Low
       secure: true
     type: web-wizard-web
