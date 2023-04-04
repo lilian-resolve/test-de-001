@@ -3,13 +3,13 @@ kind: Application
 metadata:
   annotations:
     application.deploy.reform/cluster: local
-    application.deploy.reform/commitHash: 10b7540abbaa38bc23eadf08ba54912ca5713792
-    application.deploy.reform/deploymentNo: test-ops-222-local-approval_DP1
+    application.deploy.reform/commitHash: 2dfefb1451c7035c7c4ea33d22f36146592b51ad
+    application.deploy.reform/deploymentNo: test-ops-222-local-approval_DP2
     application.deploy.reform/environment: local-approval
     application.deploy.reform/name: test-ops-222
     application.deploy.reform/repository: https://github.com/lilian-resolve/test-de-001.git
     application.deploy.reform/repositoryPath: "006"
-    application.deploy.reform/revision: 2023.04.1
+    application.deploy.reform/revision: 2023.04.2
     application.deploy.reform/tags: ""
     deploy.reform/domain: ""
     deploy.reform/version: 6b5c82cf8fbd6720e41370072c0193f4158e3f6c
@@ -23,7 +23,7 @@ spec:
       domain: https://github.com/lilian-resolve/test-de-001
       path: "005"
       resource: Low
-      secure: false
+      secure: true
     type: web-wizard-web
   policies:
   - name: topology-clusters
