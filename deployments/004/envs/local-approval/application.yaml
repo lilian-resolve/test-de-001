@@ -3,13 +3,13 @@ kind: Application
 metadata:
   annotations:
     application.deploy.reform/cluster: local
-    application.deploy.reform/commitHash: f2da9d4273a36265d96ed1c94d1a32e6d4681f44
-    application.deploy.reform/deploymentNo: test-ops-001-local-approval_DP1
+    application.deploy.reform/commitHash: 02e42b65799ccdd38246bda50f7f083835b1e7dd
+    application.deploy.reform/deploymentNo: test-ops-001-local-approval_DP3
     application.deploy.reform/environment: local-approval
     application.deploy.reform/name: test-ops-001
     application.deploy.reform/repository: https://github.com/lilian-resolve/test-de-001.git
     application.deploy.reform/repositoryPath: "004"
-    application.deploy.reform/revision: 2023.04.1
+    application.deploy.reform/revision: 2023.04.3
     application.deploy.reform/tags: ""
     deploy.reform/domain: ""
     deploy.reform/version: 6b5c82cf8fbd6720e41370072c0193f4158e3f6c
@@ -20,7 +20,7 @@ spec:
   components:
   - name: test-ops-001-web-wizard-web-web
     properties:
-      domain: https://git.reslv.io/infinity-apps/app-test-1
+      domain: https://github.com/lilian-resolve/test-de-001.git
       path: "004"
       resource: Low
       secure: true
