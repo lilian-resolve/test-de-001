@@ -13,7 +13,7 @@ spec:
       domain: https://github.com/lilian-resolve/test-de-001
       path: "005"
       resource: Low
-      secure: false
+      secure: true
     type: web-wizard-web
   policies:
   - name: topology-clusters
