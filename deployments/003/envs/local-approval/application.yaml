@@ -3,16 +3,16 @@ kind: Application
 metadata:
   annotations:
     application.deploy.reform/cluster: local
-    application.deploy.reform/commitHash: a97f627a1cf6de946c7818303bd01f056476035a
-    application.deploy.reform/deploymentNo: test-ops-890-local-approval_DP2
+    application.deploy.reform/commitHash: 22ce70d1af1bef37cf77cb0ebd6ac27f1857bef8
+    application.deploy.reform/deploymentNo: test-ops-890-local-approval_DP3
     application.deploy.reform/environment: local-approval
     application.deploy.reform/name: test-ops-890
     application.deploy.reform/repository: https://github.com/lilian-resolve/test-de-001.git
     application.deploy.reform/repositoryPath: "003"
-    application.deploy.reform/revision: 2023.04.2
+    application.deploy.reform/revision: 2023.04.3
     application.deploy.reform/tags: ""
     deploy.reform/domain: ""
-    deploy.reform/version: dev
+    deploy.reform/version: 6b5c82cf8fbd6720e41370072c0193f4158e3f6c
   creationTimestamp: null
   name: test-ops-890
   namespace: vela-app
@@ -25,9 +25,9 @@ spec:
       exposeType: ClusterIP
       image: nginx
       imagePullPolicy: IfNotPresent
-      memory: 100Mi
+      memory: 50Mi
       ports:
-      - expose: false
+      - expose: true
         port: 80
         protocol: TCP
     type: webservice
