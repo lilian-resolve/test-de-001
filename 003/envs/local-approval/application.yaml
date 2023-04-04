@@ -15,7 +15,7 @@ spec:
       exposeType: ClusterIP
       image: nginx
       imagePullPolicy: IfNotPresent
-      memory: 100Mi
+      memory: 50Mi
       ports:
       - expose: true
         port: 80
