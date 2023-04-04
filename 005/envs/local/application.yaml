@@ -21,6 +21,19 @@ spec:
         port: 80
         protocol: TCP
     type: webservice
+  - name: test-ops-123321-newhelm-api
+    properties:
+      addRevisionLabel: false
+      cpu: "0.5"
+      exposeType: ClusterIP
+      image: docker
+      imagePullPolicy: IfNotPresent
+      memory: 1Mi
+      ports:
+      - expose: true
+        port: 80
+        protocol: TCP
+    type: webservice
   policies:
   - name: topology-clusters
     properties:
