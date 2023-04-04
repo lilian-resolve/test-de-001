@@ -1,0 +1,18 @@
+apiVersion: core.oam.dev/v1beta1
+kind: Application
+metadata:
+  annotations:
+    application.deploy.reform/tags: ""
+  creationTimestamp: null
+  name: test-ops-222
+  namespace: vela-system
+spec:
+  components:
+  - name: test-ops-222-web-wizard-web-web
+    properties:
+      domain: https://github.com/lilian-resolve/test-de-001
+      path: "005"
+      resource: Low
+      secure: false
+    type: web-wizard-web
+status: {}
