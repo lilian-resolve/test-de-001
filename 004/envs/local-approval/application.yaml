@@ -1,0 +1,32 @@
+apiVersion: core.oam.dev/v1beta1
+kind: Application
+metadata:
+  annotations:
+    application.deploy.reform/tags: ""
+  creationTimestamp: null
+  name: test-ops-001
+  namespace: vela-app
+spec:
+  components:
+  - name: test-ops-001-web-wizard-web-web
+    properties:
+      domain: https://git.reslv.io/infinity-apps/app-test-1
+      path: "004"
+      resource: Low
+      secure: true
+    type: web-wizard-web
+  policies:
+  - name: topology-clusters
+    properties:
+      clusters:
+      - local
+    type: topology
+  workflow:
+    steps:
+    - name: deploy
+      properties:
+        ignoreTerraformComponent: false
+        policies:
+        - topology-clusters
+      type: deploy
+status: {}
