@@ -8,7 +8,9 @@ metadata:
   namespace: vela-app
 spec:
   components:
-  - name: test-ops-222-newhelm-api
+  - dependsOn:
+    - test-ops-222-newinfra-infrastructure
+    name: test-ops-222-newhelm-api
     properties:
       domain: https://github.com/lilian-resolve/test-de-001
       expose: true
@@ -16,6 +18,11 @@ spec:
       resource: Low
       secure: true
     type: web-wizard-api
+  - name: test-ops-222-newinfra-infrastructure
+    properties:
+      resource: Low
+      size: true
+    type: web-wizard-db
   policies:
   - name: topology-clusters
     properties:

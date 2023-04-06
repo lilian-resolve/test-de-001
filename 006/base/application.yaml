@@ -16,4 +16,9 @@ spec:
       resource: Low
       secure: true
     type: web-wizard-api
+  - name: test-ops-222-newinfra-infrastructure
+    properties:
+      resource: Low
+      size: true
+    type: web-wizard-db
 status: {}
