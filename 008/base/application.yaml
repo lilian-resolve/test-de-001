@@ -1,0 +1,24 @@
+apiVersion: core.oam.dev/v1beta1
+kind: Application
+metadata:
+  annotations:
+    application.deploy.reform/tags: ""
+  creationTimestamp: null
+  name: test-ops-444
+  namespace: vela-system
+spec:
+  components:
+  - name: test-ops-444-newweb-api
+    properties:
+      addRevisionLabel: false
+      cpu: "0.5"
+      exposeType: ClusterIP
+      image: nginx
+      imagePullPolicy: IfNotPresent
+      memory: 100Mi
+      ports:
+      - expose: true
+        port: 80
+        protocol: TCP
+    type: webservice
+status: {}
