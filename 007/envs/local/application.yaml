@@ -33,13 +33,6 @@ spec:
       - expose: true
         port: 80
         protocol: TCP
-    traits:
-    - properties:
-        class: nginx
-        classInSpec: false
-        http:
-          "1": 1
-      type: gateway
     type: webservice
   policies:
   - name: topology-clusters
