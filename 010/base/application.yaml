@@ -1,0 +1,24 @@
+apiVersion: core.oam.dev/v1beta1
+kind: Application
+metadata:
+  annotations:
+    application.deploy.reform/tags: testfail_
+  creationTimestamp: null
+  name: qc-fail-001
+  namespace: vela-system
+spec:
+  components:
+  - name: qc-fail-001-fail01-web
+    properties:
+      addRevisionLabel: false
+      cpu: "0.5"
+      exposeType: ClusterIP
+      image: docker-pull.infinity.reslv.one/nginx
+      imagePullPolicy: IfNotPresent
+      memory: 1Mi
+      ports:
+      - expose: true
+        port: 80
+        protocol: TCP
+    type: webservice
+status: {}
