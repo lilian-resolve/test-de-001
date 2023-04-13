@@ -2,7 +2,7 @@ apiVersion: core.oam.dev/v1beta1
 kind: Application
 metadata:
   annotations:
-    application.deploy.reform/tags: testfail_
+    application.deploy.reform/tags: ""
   creationTimestamp: null
   name: qc-fail-001
   namespace: vela-app
@@ -10,7 +10,7 @@ spec:
   components:
   - name: qc-fail-001-fail01-web
     properties:
-      addRevisionLabel: false
+      addRevisionLabel: true
       cpu: "0.5"
       exposeType: ClusterIP
       image: docker-pull.infinity.reslv.one/nginx
