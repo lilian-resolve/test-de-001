@@ -1,0 +1,48 @@
+apiVersion: core.oam.dev/v1beta1
+kind: Application
+metadata:
+  annotations:
+    application.deploy.reform/cluster: local
+    application.deploy.reform/commitHash: 8e82dc25edfa4ca80101ad68219ce0676b5f698f
+    application.deploy.reform/deploymentNo: qc-fail-001-local-approval_DP2
+    application.deploy.reform/environment: local-approval
+    application.deploy.reform/name: qc-fail-001
+    application.deploy.reform/repository: https://github.com/lilian-resolve/test-de-001.git
+    application.deploy.reform/repositoryPath: "010"
+    application.deploy.reform/revision: 2023.04.2
+    application.deploy.reform/tags: ""
+    deploy.reform/domain: ""
+    deploy.reform/version: 81b5e90dee2da07e72eae3cc46a074f9156e8da8
+  creationTimestamp: null
+  name: qc-fail-001
+  namespace: vela-app
+spec:
+  components:
+  - name: qc-fail-001-fail01-web
+    properties:
+      addRevisionLabel: true
+      cpu: "0.5"
+      exposeType: ClusterIP
+      image: docker-pull.infinity.reslv.one/nginx
+      imagePullPolicy: IfNotPresent
+      memory: 1Mi
+      ports:
+      - expose: true
+        port: 80
+        protocol: TCP
+    type: webservice
+  policies:
+  - name: topology-clusters
+    properties:
+      clusters:
+      - local
+    type: topology
+  workflow:
+    steps:
+    - name: deploy
+      properties:
+        ignoreTerraformComponent: false
+        policies:
+        - topology-clusters
+      type: deploy
+status: {}
