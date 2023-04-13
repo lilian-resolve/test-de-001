@@ -3,13 +3,13 @@ kind: Application
 metadata:
   annotations:
     application.deploy.reform/cluster: local
-    application.deploy.reform/commitHash: cde1f152f02fb7ffe211ebb84bd80f028e4c326d
-    application.deploy.reform/deploymentNo: qc-name-01-local_DP1
+    application.deploy.reform/commitHash: d13703848358cd1f960c95cdf56ef7f63ed4d40b
+    application.deploy.reform/deploymentNo: qc-name-01-local_DP2
     application.deploy.reform/environment: local
     application.deploy.reform/name: qc-name-01
     application.deploy.reform/repository: https://github.com/lilian-resolve/test-de-001.git
     application.deploy.reform/repositoryPath: "009"
-    application.deploy.reform/revision: 2023.04.1
+    application.deploy.reform/revision: 2023.04.2
     application.deploy.reform/tags: ""
     deploy.reform/domain: ""
     deploy.reform/version: 97a8dfd5397e881e69d246ac1cba15eb5fd08c3b
