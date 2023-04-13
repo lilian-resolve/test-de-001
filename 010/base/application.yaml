@@ -10,7 +10,7 @@ spec:
   components:
   - name: qc-fail-001-fail01-web
     properties:
-      addRevisionLabel: true
+      addRevisionLabel: false
       cpu: "0.5"
       exposeType: ClusterIP
       image: docker-pull.infinity.reslv.one/nginx
