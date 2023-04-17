@@ -15,7 +15,20 @@ spec:
       exposeType: ClusterIP
       image: docker-pull.infinity.reslv.one/nginx
       imagePullPolicy: IfNotPresent
-      memory: 10Mi
+      memory: 16Mi
+      ports:
+      - expose: true
+        port: 80
+        protocol: TCP
+    type: webservice
+  - name: qc-trial-002-app-test-web
+    properties:
+      addRevisionLabel: false
+      cpu: "0.5"
+      exposeType: ClusterIP
+      image: nginx
+      imagePullPolicy: IfNotPresent
+      memory: 1024Mi
       ports:
       - expose: true
         port: 80
