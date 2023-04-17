@@ -1,0 +1,32 @@
+apiVersion: core.oam.dev/v1beta1
+kind: Application
+metadata:
+  annotations:
+    application.deploy.reform/tags: ""
+  creationTimestamp: null
+  name: wizard-test-1
+  namespace: vela-app
+spec:
+  components:
+  - name: wizard-test-1-web-wizard-web-web
+    properties:
+      domain: service-unq-1.poc.k8s.app
+      path: test-9-approval
+      resource: Low
+      secure: false
+    type: web-wizard-web
+  policies:
+  - name: topology-clusters
+    properties:
+      clusters:
+      - local
+    type: topology
+  workflow:
+    steps:
+    - name: deploy
+      properties:
+        ignoreTerraformComponent: false
+        policies:
+        - topology-clusters
+      type: deploy
+status: {}
