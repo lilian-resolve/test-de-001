@@ -2,12 +2,12 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 commonAnnotations:
   application.deploy.reform/cluster: local
   application.deploy.reform/commitHash: a91d3349f83a9683aeef919064bf7d6260f8b382
-  application.deploy.reform/deploymentNo: qc-trial-002-local_DP1
+  application.deploy.reform/deploymentNo: qc-trial-002-local_DP2
   application.deploy.reform/environment: local
   application.deploy.reform/name: qc-trial-002
   application.deploy.reform/repository: https://github.com/lilian-resolve/test-de-001.git
   application.deploy.reform/repositoryPath: "014"
-  application.deploy.reform/revision: 2023.04.1
+  application.deploy.reform/revision: 2023.04.2-RB2023.04.1
   deploy.reform/domain: ""
   deploy.reform/version: f86b2b7d87415d091966ec0d2e4c54a54d294db7
 kind: Kustomization
