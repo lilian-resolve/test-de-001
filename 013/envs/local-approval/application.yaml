@@ -15,7 +15,7 @@ spec:
       exposeType: ClusterIP
       image: docker-pull.infinity.reslv.one/nginx
       imagePullPolicy: IfNotPresent
-      memory: 15Mi
+      memory: 10Mi
       ports:
       - expose: true
         port: 80
