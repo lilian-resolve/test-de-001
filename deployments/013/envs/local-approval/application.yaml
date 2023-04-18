@@ -21,6 +21,19 @@ spec:
         port: 80
         protocol: TCP
     type: webservice
+  - name: qc-trial-001-ng-web
+    properties:
+      addRevisionLabel: false
+      cpu: "0.5"
+      exposeType: ClusterIP
+      image: docker-pull.infinity.reslv.one/nginx
+      imagePullPolicy: IfNotPresent
+      memory: 1024Mi
+      ports:
+      - expose: true
+        port: 80
+        protocol: TCP
+    type: webservice
   policies:
   - name: topology-clusters
     properties:
