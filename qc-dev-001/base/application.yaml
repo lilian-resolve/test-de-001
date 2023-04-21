@@ -3,7 +3,6 @@ kind: Application
 metadata:
   annotations:
     application.deploy.reform/tags: ""
-    application.deploy.reform/test: dev
   creationTimestamp: null
   name: qc-dev-001
   namespace: vela-system
