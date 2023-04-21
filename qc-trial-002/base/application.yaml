@@ -3,7 +3,6 @@ kind: Application
 metadata:
   annotations:
     application.deploy.reform/tags: ""
-    application.deploy.reform/test: tag
   creationTimestamp: null
   name: qc-trial-002
   namespace: vela-system
@@ -16,7 +15,7 @@ spec:
       exposeType: ClusterIP
       image: docker-pull.infinity.reslv.one/nginx
       imagePullPolicy: IfNotPresent
-      memory: 9Mi
+      memory: 7Mi
       ports:
       - expose: true
         port: 80
