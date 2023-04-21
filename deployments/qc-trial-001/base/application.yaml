@@ -2,7 +2,7 @@ apiVersion: core.oam.dev/v1beta1
 kind: Application
 metadata:
   annotations:
-    application.deploy.reform/tags: test-tag
+    application.deploy.reform/tags: ""
   creationTimestamp: null
   name: qc-trial-001
   namespace: vela-system
@@ -15,7 +15,9 @@ spec:
       exposeType: ClusterIP
       image: docker-pull.infinity.reslv.one/nginx
       imagePullPolicy: IfNotPresent
-      memory: 10Mi
+      imagePullSecrets:
+      - docker-pull.infinity.reslv.one
+      memory: 16Mi
       ports:
       - expose: true
         port: 80
