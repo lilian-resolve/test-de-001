@@ -2,12 +2,12 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 commonAnnotations:
   application.deploy.reform/cluster: local
   application.deploy.reform/commitHash: 2d698c57cab830f452c4554a361e119db0271d2e
-  application.deploy.reform/deploymentNo: qc-smokecalvin-local_DP2
+  application.deploy.reform/deploymentNo: qc-smokecalvin-local_DP4
   application.deploy.reform/environment: local
   application.deploy.reform/name: qc-smokecalvin
   application.deploy.reform/repository: https://github.com/lilian-resolve/test-de-001
   application.deploy.reform/repositoryPath: qc-smokecalvin
-  application.deploy.reform/revision: 2023.04.2
+  application.deploy.reform/revision: 2023.04.4-RB2023.04.2
   deploy.reform/domain: ""
   deploy.reform/version: f0b71db77f6a0f746bcd4186d01868e6a404cbc0
 kind: Kustomization
