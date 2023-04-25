@@ -1,15 +1,15 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 commonAnnotations:
   application.deploy.reform/cluster: local
-  application.deploy.reform/commitHash: b59c8b6cdd2dfd942624b215688d6fcfc7cba289
-  application.deploy.reform/deploymentNo: qc-testtag-01-local_DP1
+  application.deploy.reform/commitHash: 441ac029e00fd367c8d965fd89e7283fc1141b84
+  application.deploy.reform/deploymentNo: qc-testtag-01-local_DP3
   application.deploy.reform/environment: local
   application.deploy.reform/name: qc-testtag-01
   application.deploy.reform/repository: https://github.com/lilian-resolve/test-de-001
   application.deploy.reform/repositoryPath: qc-testtag-01
-  application.deploy.reform/revision: 2023.04.1
+  application.deploy.reform/revision: 2023.04.3
   deploy.reform/domain: ""
-  deploy.reform/version: 588550c7da8671ad490dc07da3791dfd9b6d99b3
+  deploy.reform/version: e81b9acf0e7ba35a992597ab6fb5d5564a7895b8
 kind: Kustomization
 namespace: vela-app
 patchesStrategicMerge:
