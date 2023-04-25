@@ -21,6 +21,19 @@ spec:
         port: 80
         protocol: TCP
     type: webservice
+  - name: qc-button-001-newwebb-api
+    properties:
+      addRevisionLabel: false
+      cpu: "0.5"
+      exposeType: ClusterIP
+      image: docker-pull.infinity.reslv.one/nginx
+      imagePullPolicy: IfNotPresent
+      memory: 8Mi
+      ports:
+      - expose: true
+        port: 80
+        protocol: TCP
+    type: webservice
   policies:
   - name: topology-clusters
     properties:
