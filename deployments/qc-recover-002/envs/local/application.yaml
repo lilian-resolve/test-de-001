@@ -17,7 +17,7 @@ spec:
       imagePullPolicy: IfNotPresent
       imagePullSecrets:
       - docker-pull.infinity.reslv.one
-      memory: 10Mi
+      memory: 9Mi
       ports:
       - expose: true
         port: 80
