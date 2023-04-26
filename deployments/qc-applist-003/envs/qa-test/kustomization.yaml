@@ -1,15 +1,15 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 commonAnnotations:
   application.deploy.reform/cluster: local
-  application.deploy.reform/commitHash: eff4354a14191d6e7bd825b825146b11bab685f1
-  application.deploy.reform/deploymentNo: qc-applist-003-qa-test_DP1
+  application.deploy.reform/commitHash: a37326cdcaf518f7667ef4990f35b259d99e1ae3
+  application.deploy.reform/deploymentNo: qc-applist-003-qa-test_DP3
   application.deploy.reform/environment: qa-test
   application.deploy.reform/name: qc-applist-003
   application.deploy.reform/repository: https://github.com/lilian-resolve/test-de-001
   application.deploy.reform/repositoryPath: qc-applist-003
-  application.deploy.reform/revision: 2023.04.1
+  application.deploy.reform/revision: 2023.04.3
   deploy.reform/domain: ""
-  deploy.reform/version: e81b9acf0e7ba35a992597ab6fb5d5564a7895b8
+  deploy.reform/version: 7a8145a6644a0f7b371a721346d46f35221f83f7
 kind: Kustomization
 namespace: qa-test
 patchesStrategicMerge:
