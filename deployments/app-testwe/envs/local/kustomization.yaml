@@ -1,0 +1,18 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+commonAnnotations:
+  application.deploy.reform/cluster: local
+  application.deploy.reform/commitHash: 25ca41c82862431d9735a86f3cc6bf8161219ba6
+  application.deploy.reform/deploymentNo: app-testwe-local_DP1
+  application.deploy.reform/environment: local
+  application.deploy.reform/name: app-testwe
+  application.deploy.reform/repository: https://github.com/lilian-resolve/test-de-001
+  application.deploy.reform/repositoryPath: app-testwe
+  application.deploy.reform/revision: 2023.05.1
+  deploy.reform/domain: ""
+  deploy.reform/version: 17e57a813b4a4e103699ec5f7ccfa3931985734a
+kind: Kustomization
+namespace: vela-app
+patchesStrategicMerge:
+- application.yaml
+resources:
+- ../../base
